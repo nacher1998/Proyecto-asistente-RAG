@@ -1,0 +1,42 @@
+# --- Secretos y configuración local ---
+.env
+*.env.local
+
+# --- Entornos virtuales de Python ---
+venv/
+env/
+.venv/
+ENV/
+
+# --- Cache y compilados de Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+
+# --- Datos y bases vectoriales (pueden pesar mucho) ---
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+chroma_db/
+*.sqlite3
+*.faiss
+*.index
+
+# --- Notebooks: checkpoints ---
+.ipynb_checkpoints/
+
+# --- Logs ---
+*.log
+logs/
+
+# --- Sistema operativo / editor ---
+.DS_Store
+.vscode/
+.idea/
+Thumbs.db
+
+# --- Resultados de evaluación con posibles datos sensibles ---
+evaluation/results/
