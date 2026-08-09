@@ -1,1 +1,38 @@
+[
+  {
+    "id": "q1",
+    "question": "¿Cuál es el horario de atención de la oficina de reclamos?",
+    "expect_answer": true,
+    "expected_source_contains": "test1.txt",
+    "notes": "Pregunta directa, la respuesta debe estar en el corpus."
+  },
+  {
+    "id": "q2",
+    "question": "¿Cuántos días hábiles tarda en resolverse un reclamo?",
+    "expect_answer": true,
+    "expected_source_contains": "test1.txt",
+    "notes": "Pregunta directa con dato numérico específico."
+  },
+  {
+    "id": "q3",
+    "question": "¿Se pueden devolver productos personalizados?",
+    "expect_answer": true,
+    "expected_source_contains": "test2.txt",
+    "notes": "Pregunta sobre política de devoluciones."
+  },
+  {
+    "id": "q4",
+    "question": "¿Cuál es la capital de Australia?",
+    "expect_answer": false,
+    "expected_source_contains": null,
+    "notes": "Pregunta totalmente fuera de dominio: el sistema debe admitir que no lo sabe."
+  },
+  {
+    "id": "q5",
+    "question": "¿Qué política de vacaciones tiene la empresa?",
+    "expect_answer": false,
+    "expected_source_contains": null,
+    "notes": "Pregunta plausible pero sobre un tema que no está en el corpus de prueba."
+  }
+]
 
